@@ -1,0 +1,41 @@
+.mar_pad(@counter) when (@counter<=50) {
+  .mar@{counter} {
+    margin: @counter*1px
+  }
+  .mar-left@{counter} {
+    margin-left: @counter*1px;
+  }
+  .mar-rig@{counter} {
+    margin-right: @counter*1px;
+  }
+  .mar-top@{counter} {
+    margin-top: @counter*1px;
+  }
+  .mar-bot@{counter} {
+    margin-bottom: @counter*1px;
+  }
+  .pad@{counter} {
+    padding: @counter*1px
+  }
+  .pad-left@{counter} {
+    padding-left: @counter*1px;
+  }
+  .pad-rig@{counter} {
+    padding-right: @counter*1px;
+  }
+  .pad-top@{counter} {
+    padding-top: @counter*1px;
+  }
+  .pad-bot@{counter} {
+    padding-bottom: @counter*1px;
+  }
+  .mar_pad((@counter+1));
+}
+.mar_pad(0);
+.flex {
+  display: flex;
+  align-items: center;
+}
+.grey {
+  color: #8c8c8c; // antd-grey7
+}
